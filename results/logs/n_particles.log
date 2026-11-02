@@ -1,0 +1,16 @@
+2026-10-11 18:06:07,915 | INFO | === Чистый сценарий (bias=0, outliers=0) ===
+2026-10-11 18:06:07,939 | INFO | [clean n=   200] RMSE*=2.78 m  final=2.55 m  time=0.018 s
+2026-10-11 18:06:07,970 | INFO | [clean n=   500] RMSE*=3.99 m  final=2.54 m  time=0.026 s
+2026-10-11 18:06:08,008 | INFO | [clean n=  1000] RMSE*=3.81 m  final=2.54 m  time=0.033 s
+2026-10-11 18:06:08,065 | INFO | [clean n=  2000] RMSE*=4.13 m  final=2.43 m  time=0.051 s
+2026-10-11 18:06:08,168 | INFO | [clean n=  5000] RMSE*=4.26 m  final=2.51 m  time=0.098 s
+2026-10-11 18:06:08,354 | INFO | [clean n= 10000] RMSE*=4.23 m  final=2.55 m  time=0.182 s
+2026-10-11 18:06:08,715 | INFO | [clean n= 20000] RMSE*=4.16 m  final=2.48 m  time=0.355 s
+2026-10-11 18:06:08,726 | INFO | === Реалистичный сценарий (bias=0.5, outliers 2%) ===
+2026-10-11 18:06:08,755 | INFO | [real n=   200] RMSE*=3.03 m  final=1.70 m  time=0.019 s
+2026-10-11 18:06:08,785 | INFO | [real n=   500] RMSE*=3.91 m  final=1.56 m  time=0.025 s
+2026-10-11 18:06:08,822 | INFO | [real n=  1000] RMSE*=4.02 m  final=2.07 m  time=0.033 s
+2026-10-11 18:06:08,878 | INFO | [real n=  2000] RMSE*=4.24 m  final=2.03 m  time=0.051 s
+2026-10-11 18:06:08,984 | INFO | [real n=  5000] RMSE*=4.49 m  final=2.31 m  time=0.101 s
+2026-10-11 18:06:09,182 | INFO | [real n= 10000] RMSE*=4.36 m  final=2.30 m  time=0.189 s
+2026-10-11 18:06:09,531 | INFO | [real n= 20000] RMSE*=4.19 m  final=2.18 m  time=0.344 s

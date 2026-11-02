@@ -1,0 +1,10 @@
+2026-11-02 22:22:07,999 | INFO | === Стадия 0: идеальные условия (σ_meas=0.2) ===
+2026-11-02 22:22:08,315 | INFO | [ideal] RMSE=2.57 m  RMSE*=0.86 m  max=23.79 m  final=0.90 m  conv_rel=15  gated=0/121
+2026-11-02 22:22:09,110 | INFO | === Стадия 1: σ_meas=0.5 м ===
+2026-11-02 22:22:09,307 | INFO | [noisy_0.5] RMSE=2.91 m  RMSE*=1.39 m  max=24.32 m  final=0.71 m  conv_rel=24  gated=0/121
+2026-11-02 22:22:10,068 | INFO | === Стадия 2: σ_meas=1.0 м ===
+2026-11-02 22:22:10,255 | INFO | [noisy_1.0] RMSE=3.26 m  RMSE*=1.16 m  max=22.21 m  final=0.82 m  conv_rel=25  gated=2/121
+2026-11-02 22:22:10,914 | INFO | === Стадия 3: σ_meas=3 м, 3 выброса ===
+2026-11-02 22:22:11,103 | INFO | [outliers] RMSE=6.82 m  RMSE*=3.30 m  max=25.22 m  final=1.14 m  conv_rel=32  gated=3/121
+2026-11-02 22:22:11,732 | INFO | === Стадия 4: чистая модель (bias=0, out=0) ===
+2026-11-02 22:22:11,955 | INFO | [clean] RMSE=3.29 m  RMSE*=1.24 m  max=21.19 m  final=0.04 m  conv_rel=113  gated=0/121

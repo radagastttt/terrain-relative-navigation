@@ -1,0 +1,57 @@
+seed: 42
+
+dem:
+  source: geotiff            # synthetic | geotiff
+  # geotiff: Copernicus GLO-30, Централен Балкан (Ботев), UTM 35N (EPSG:32635).
+  # origin_xy/dx/dy для geotiff вычисляются из transform файла.
+  path: data/raw/central_balkan_cop30_utm35n.tif
+  # synthetic:
+  rows: 200
+  cols: 200
+  dx: 30.0
+  dy: 30.0
+  origin_xy: [0.0, 0.0]
+
+trajectory:
+  # synthetic: [1000.0, 1000.0], heading 45
+  # geotiff: с главного хребта восточнее Ботева на север, через ущелья
+  start_xy: [329500.0, 4732500.0]
+  speed: 25.0
+  heading_deg: 105.0
+  duration: 120.0
+  dt: 1.0
+
+measurement:
+  sigma_baro: 3.0
+  bias: 0.5
+  outlier_prob: 0.02
+  outlier_scale: 5.0
+
+particle_filter:
+  n_particles: 5000
+  init_sigma_xy: 50.0
+  sigma_proc: 0.1
+  resample_threshold: 0.5
+
+stages:
+  ideal:
+    sigma_meas: 0.2
+    sigma_proc: 0.5
+    n_particles: 5000
+    burn_in: 5
+  noisy_0.5:
+    sigma_meas: 0.5
+    sigma_proc: 0.5
+    n_particles: 5000
+    burn_in: 10
+  noisy_1.0:
+    sigma_meas: 1.0
+    sigma_proc: 0.5
+    n_particles: 5000
+    burn_in: 10
+  outliers:
+    sigma_meas: 3.0
+    sigma_proc: 0.5
+    n_particles: 5000
+    burn_in: 10
+    inject_magnitude: 30.0
